@@ -9,7 +9,7 @@ import { SolarAndMortyApp } from './SolarAndMortyApp'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <SolarAndMortyApp />
+      <SolarAndMortyApp/>
     </BrowserRouter>
   </StrictMode>,
 )
