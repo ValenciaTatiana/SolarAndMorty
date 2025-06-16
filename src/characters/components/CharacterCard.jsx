@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 export const CharacterCard = ({ character }) => {
 
     const {id, character_name, description, first_appearance} = character;
-    
     const urlImage = `/assets/img/${id}.png`;
 
     return (
         <>
-            <div className="col">
+            <div className="col animate__animated animate__fadeIn">
                 <div className="card">
                     <div className="row no-gutters">
                         <div className="col-4">

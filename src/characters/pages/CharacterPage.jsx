@@ -22,7 +22,7 @@ export const CharacterPage = () => {
   return (
     <>
       <div className="row mt-5">
-        <div className="col-4">
+        <div className="col-4 animate__animated animate__fadeInLeft">
           <img src={urlImage} alt={character_name} className="img-thumbnail" />
         </div>
 
