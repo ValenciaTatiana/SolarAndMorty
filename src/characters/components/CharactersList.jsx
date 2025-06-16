@@ -1,4 +1,5 @@
 import { getCharactersByPublisher } from "../helpers/index"
+import { CharacterCard } from "./index";
 
 export const CharactersList = ({ publisher }) => {
 
@@ -6,15 +7,13 @@ export const CharactersList = ({ publisher }) => {
 
     return (
         <>
-            <ul>
+            <div className="row rows-cols-1 row-cols-md-3 g-3">
                 {
                     characters.map(character => (
-                        <li key={character.id}>
-                            {character.character}
-                        </li>
+                        <CharacterCard character={character}/>
                     ))
                 }
-            </ul>
+            </div>
         </>
     )
 }
