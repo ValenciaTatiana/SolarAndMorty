@@ -1,9 +1,10 @@
+import { useMemo } from "react";
 import { getCharactersByPublisher } from "../helpers/index"
 import { CharacterCard } from "./index";
 
 export const CharactersList = ({ publisher }) => {
 
-    const characters = getCharactersByPublisher(publisher);
+    const characters = useMemo(() => getCharactersByPublisher(publisher), [publisher]);
 
     return (
         <>

@@ -1,11 +1,12 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom"
 import { getCharactersById } from "../helpers/index";
+import { useMemo } from "react";
 
 export const CharacterPage = () => {
 
   const { id } = useParams();
   const navigate = useNavigate();
-  const character = getCharactersById(id);
+  const character = useMemo(() => getCharactersById(id), [id]);
 
   const { character_name, description, first_appearance, abilities, fun_fact } = character;
   const urlImage = `/assets/img/${id}.png`;
