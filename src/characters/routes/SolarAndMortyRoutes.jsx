@@ -13,7 +13,7 @@ export const SolarAndMortyRoutes = () => {
                     <Route path="rickandmorty" element={<RickAndMortyPage/>}/>
                     <Route path="solaropposities" element={<SolarOppositiesPage/>}/>
                     <Route path="search" element={<SearchPage/>}></Route>
-                    <Route path="character" element={<CharacterPage/>}></Route>
+                    <Route path="character/:id" element={<CharacterPage/>}></Route>
                     
                     <Route path="404" element={<NotFoundPage/>}/>
                 </Routes>

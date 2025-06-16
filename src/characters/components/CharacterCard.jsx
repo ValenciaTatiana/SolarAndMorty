@@ -23,7 +23,7 @@ export const CharacterCard = ({ character }) => {
                                     <small className="text-muted">{first_appearance}</small>
                                 </p>
 
-                                <Link to={`/hero`}>
+                                <Link to={`/character/${id}`}>
                                     Ver Más...
                                 </Link>
                             </div>

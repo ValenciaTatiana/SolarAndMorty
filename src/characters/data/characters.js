@@ -186,7 +186,7 @@ export const characters = [
             "Terry, that's a terrible idea!",
             "Humans are disgusting."
         ],
-        fun_fact: 'Originalmente lo interpretaba Justin Roiland (como Rick).',
+        fun_fact: 'Originalmente lo interpretaba Justin Roiland (quien también dio voz a Rick en Rick and Morty).',
         relationships: [
             { name: 'Terry', type: 'Compañero alien' }
         ],
