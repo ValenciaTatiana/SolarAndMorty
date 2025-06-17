@@ -6,10 +6,11 @@ export const Navbar = () => {
 
     const navigate = useNavigate();
 
-    const {state} = useContext(AuthContext);
+    const {state, logout} = useContext(AuthContext);
 
     const handleLogout = () => {
         navigate("/login", {replace: true});
+        logout();
     }
 
     return (
@@ -42,9 +43,6 @@ export const Navbar = () => {
                     <button className='nav-item nav-link btn btn-primary' onClick={handleLogout}>
                         Logout
                     </button>
-                    {/* <NavLink className={({isActive}) => `nav-item nav-link ${isActive ? 'active' : ''}`} to="/login">
-                        Logout
-                    </NavLink> */}
                 </ul>
             </div>
         </nav>
