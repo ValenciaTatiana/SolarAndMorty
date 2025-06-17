@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const CharacterCard = ({ character }) => {
 
     const {id, character_name, description, first_appearance} = character;
-    const urlImage = `/assets/img/${id}.png`;
+    const urlImage = `/img/${id}.png`;
 
     return (
         <>
