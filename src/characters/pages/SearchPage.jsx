@@ -30,8 +30,6 @@ export const SearchPage = () => {
 
       <div className="row">
         <div className="col-5">
-          <h4>Searching</h4>
-          <hr />
           <form onSubmit={handleSearchSubmit}>
             <input type="text" placeholder="Search a Character" className="form-control" name="searchText" autoComplete="off" value={searchText} onChange={onInputChange} />
 
@@ -45,13 +43,12 @@ export const SearchPage = () => {
           <h4>Results</h4>
           <hr />
 
-          <div className="alert alert-primary">
-            Find.
-          </div>
-
-          <div className="alert alert-danger">
-            No Found <b>{q}</b>
-          </div>
+          {
+            (characters.length === 0) ?
+              <div className="alert alert-danger">
+                No Found <b>{q}</b>
+              </div> : ''
+          }
 
           {
             characters.map(character => (

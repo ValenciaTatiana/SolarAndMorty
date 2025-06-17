@@ -15,7 +15,7 @@ export const SolarAndMortyRoutes = () => {
                     <Route path="search" element={<SearchPage/>}></Route>
                     <Route path="character/:id" element={<CharacterPage/>}></Route>
                     
-                    <Route path="404" element={<NotFoundPage/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
             </div>
 
