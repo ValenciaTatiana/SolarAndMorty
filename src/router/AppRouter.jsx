@@ -8,12 +8,14 @@ export const AppRouter = () => {
     return (
         <>
             <Routes>
+                {/* Ruta Publica */}
                 <Route path="/login" element={
                     <PublicRoute>
                         <LoginPage />
                     </PublicRoute>
                 } />
-                {/* <Route path="login" element={<LoginPage />} /> */}
+
+                {/* Rutas Privadas */}
                 <Route path="/*" element={
                     <PrivateRoute>
                         <SolarAndMortyRoutes />
